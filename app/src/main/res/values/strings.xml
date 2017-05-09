@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android Theming</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="black_theme_name">Black Bird Cycling</string>
+    <string name="basic_theme_name">Лучшее приложение</string>
+    <string name="burger_theme_name">Бургерная</string>
+    <string name="burger_theme_products">Меню</string>
+    <string name="black_theme_products">Асортимент</string>
+    <string name="basic_theme_products">Главная</string>
+    <string name="pick_theme">Выбор темы:</string>
+    <string name="example_item_in_list_title">Пример элемента в списке:</string>
+    <string name="example_attributes_types_title">Пример типов атрибутов в темах:</string>
+
+</resources>

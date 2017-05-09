@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_colorPrimary">#212121</color>
+    <color name="dark_colorPrimaryDark">#000</color>
+    <color name="dark_colorAccent">#49a7cc</color>
+    <color name="dark_color_drawer_background">#1b1b1b</color>
+    <color name="dark_windowBackground">#303030</color>
+
+    <color name="dark_cardBackground">#424242</color>
+    <color name="dark_card_overlay">#88212121</color>
+
+
+</resources>

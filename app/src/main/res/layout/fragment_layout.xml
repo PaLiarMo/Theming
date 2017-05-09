@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="@string/example_item_in_list_title"
+        android:minHeight="@dimen/TitleMinHeight"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/go_basic"
+            style="@style/defButton"
+            android:onClick="changeTheme"
+            android:text="Базовая"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/go_dark"
+            style="@style/defButton"
+            android:onClick="changeTheme"
+            android:text="Темная"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/go_burger"
+            style="@style/defButton"
+            android:onClick="changeTheme"
+            android:text="Бургеры"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="@string/example_item_in_list_title"
+        android:minHeight="@dimen/TitleMinHeight"/>
+
+    <!-- В LinearLayout мы будем добавлять View динамически-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_for_inflate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:text="@string/example_attributes_types_title"
+        android:minHeight="@dimen/TitleMinHeight"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    >
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="?card_background"
+        card_view:cardCornerRadius="2dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="- reference"/>
+                <TextView android:layout_weight="1" android:text="- flag"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="8dp">
+                <TextView android:layout_weight="1" android:text="- boolean"/>
+                <TextView android:layout_weight="1" android:text="- float"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="8dp">
+                <TextView android:layout_weight="1" android:text="- color"/>
+                <TextView android:layout_weight="1" android:text="- fraction"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="8dp">
+                <TextView android:layout_weight="1" android:text="- dimension"/>
+                <TextView android:layout_weight="1" android:text="- integer"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="8dp">
+                <TextView android:layout_weight="1" android:text="- enum"/>
+                <TextView android:layout_weight="1" android:text="- string"/>
+            </TableRow>
+
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

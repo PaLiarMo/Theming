@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="?drawer_ic_main"
+            android:checked="true"
+            android:title="?string_products_kind" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Галерея" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Акции" />
+        <item
+            android:id="@+id/nav_manage"
+            android:enabled="false"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Настройки" />
+    </group>
+
+    <item android:title="Обратная связь">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Поделиться" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Отправить свое мнение" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/grp1" >
+        <item
+            android:id="@+id/about_author"
+            android:icon="@drawable/ic_about"
+            android:title="Об авторе" />
+    </group>
+
+
+
+</menu>

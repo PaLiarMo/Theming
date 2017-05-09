@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Атрибуты боковой панели записаны в основной теме, это не рукожопство а демонстрация -->
+    <style name="AppTheme.Basic" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">@bool/transparent_status_bar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <!--НАСТРОЙКА БОКОВОГО МЕНЮ-->
+        <item name="drawer_background">@color/colorWhite</item>
+        <item name="drawer_header_icon">@null</item>
+        <item name="drawer_header_background">@drawable/material</item>
+        <item name="drawer_style">@style/NavTheme.Basic</item>
+        <item name="drawer_textColor">@color/basic_item_text_color</item>
+        <item name="drawer_header_text_color">@color/colorWhite</item>
+        <item name="drawer_ic_main">@drawable/ic_home</item>
+        <item name="string_theme_name">@string/basic_theme_name</item>
+        <item name="string_products_kind">@string/basic_theme_products</item>
+
+
+        <item name="list_item_layout">@layout/item</item>
+        <item name="list_item_image">@drawable/pool_item</item>
+        <item name="list_item_height">@dimen/itemHeight</item>
+
+        <item name="card_background">@null</item>
+    </style>
+
+    <style name="defButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="NavTheme.Basic" parent="Theme.AppCompat">
+        <item name="android:listDivider">@drawable/basic_divider</item>
+        <item name="android:textColorSecondary">@color/burger_item_text_color</item>
+        <item name="itemIconTint">@color/basic_item_text_color</item>
+        <item name="itemTextColor">@color/basic_item_text_color</item>
+        <item name="itemBackground">@drawable/basic_navigation_selector</item>
+    </style>
+
+
+
+
+    <!-- В этом варианте все атрибуты уже определены в теме для NavigationView-->
+    <!-- Использовать их можно только в пределах контекста NavigationView -->
+    <!-- если попробовать установить атрибут в теме AppTheme.Dark то будет крэш-->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">@bool/transparent_status_bar</item>
+        <item name="colorPrimary">@color/dark_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_drawer_background</item>
+        <item name="colorAccent">@color/dark_colorAccent</item>
+        <item name="colorButtonNormal">@color/dark_colorPrimary</item>
+        <item name="android:buttonStyle">@style/defButton</item>
+        <!--НАСТРОЙКА БОКОВОГО МЕНЮ-->
+        <item name="drawer_style">@style/NavTheme.Dark</item>
+        <item name="string_products_kind">ПО УМОЛЧАНИЮ</item>
+        <item name="list_item_layout">@layout/item</item>
+        <item name="list_item_image">@drawable/bike</item>
+        <item name="list_item_height">@dimen/nav_header_height</item>
+        <!--=======================-->
+        <item name="card_background">@color/dark_cardBackground</item>
+    </style>
+
+
+    <style name="NavTheme.Dark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:listDivider">@drawable/divider</item>
+        <item name="android:textColorSecondary">#AAFFFFFF</item>
+        <item name="itemIconTint">?drawer_textColor</item>
+        <item name="itemTextColor">?drawer_textColor</item>
+        <!-- Внутри темы можно использовать как значения напрямую "@drawable/dark_navigation_selector"-->
+        <!-- так и скармливать атрибуты -->
+        <item name="drawer_header_text_color">?drawer_textColor</item>
+        <item name="itemBackground">@drawable/dark_navigation_selector</item>
+        <item name="drawer_ic_main">@drawable/ic_directions_bike_black_24dp</item>
+        <item name="string_products_kind">@string/black_theme_products</item>
+        <item name="drawer_background">@color/color_drawer_background</item>
+        <item name="drawer_header_icon">@mipmap/ic_black_bird</item>
+        <item name="drawer_header_background">@drawable/dark_night</item>
+        <item name="drawer_textColor">@color/dark_item_text_color</item>
+        <item name="string_theme_name">@string/black_theme_name</item>
+
+    </style>
+
+
+
+    <!-- <<<<<<<<<<<<<<< >>>>>>>>>>>>>>>> -->
+
+    <style name="AppTheme.Burger" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">@bool/transparent_status_bar</item>
+        <item name="colorPrimary">@color/burger_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/burger_colorPrimaryDark</item>
+        <item name="colorAccent">@color/burger_colorAccent</item>
+        <item name="itemIconTint">@color/burger_item_icon_color</item>
+        <item name="colorButtonNormal">@color/burger_colorPrimaryDark</item>
+        <item name="android:buttonStyle">@style/defButton</item>
+        <item name="list_item_image">@drawable/burger_item</item>
+        <!--НАСТРОЙКА БОКОВОГО МЕНЮ-->
+        <item name="drawer_style">@style/NavTheme.Burger</item>
+        <item name="string_products_kind">ПО УМОЛЧАНИЮ</item>
+        <!--=======================-->
+        <item name="list_item_layout">@layout/item_list</item>
+        <item name="list_item_height">80dp</item>
+        <item name="card_background">@color/burger_card</item>
+        <!-- если в теме не используется атрибут лучше всегда определять его-->
+        <!-- что бы не наступать на грабли -->
+        <!-- -->
+    </style>
+    <style name="NavTheme.Burger" parent="Theme.AppCompat">
+        <item name="drawer_header_icon">@null</item>
+        <item name="drawer_header_background">@drawable/burgers</item>
+        <item name="drawer_textColor">@color/burger_item_text_color</item>
+        <item name="string_theme_name">@string/burger_theme_name</item>
+        <item name="drawer_background">@color/burger_color_drawer_background</item>
+        <item name="android:listDivider">@drawable/burger_divider</item>
+        <item name="android:textColorSecondary">@color/burger_item_text_color</item>
+        <item name="itemTextColor">@color/burger_item_text_color</item>
+        <item name="drawer_header_text_color">@color/burger_colorPrimaryDark</item>
+        <item name="itemBackground">@drawable/burger_navigation_selector</item>
+        <item name="drawer_ic_main">@drawable/ic_restaurant_menu</item>
+        <item name="string_products_kind">@string/burger_theme_products</item>
+    </style>
+
+
+
+
+
+
+
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AppTheme.Start" parent="Theme.AppCompat"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

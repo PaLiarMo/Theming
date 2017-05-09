@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="burger_colorPrimary">#ff9800</color>
+    <color name="burger_colorPrimaryDark">#ef6c00</color>
+    <color name="burger_colorAccent">#ff3d00</color>
+    <color name="burger_color_drawer_background">#f8f8f8</color>
+    <color name="burger_windowBackground">#f8f8f8</color>
+    <color name="burger_selector">#ffcc80</color>
+    <color name="burger_colorText">#88000000</color>
+    <color name="burger_colorDisabled">#22000000</color>
+    <color name="burger_card">#FFF3E0</color>
+
+</resources>

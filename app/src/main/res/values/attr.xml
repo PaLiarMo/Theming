@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="drawer_style" format="reference"/>
+    <attr name="drawer_header_icon" format="reference"/>
+    <attr name="drawer_header_text_color" format="reference"/>
+    <attr name="drawer_header_background" format="reference"/>
+    <attr name="drawer_background" format="color"/>
+    <attr name="drawer_ic_main" format="reference"/>
+    <attr name="drawer_textColor" format="color"/>
+
+    <attr name="list_item_layout" format="reference"/>
+    <attr name="list_item_height" format="dimension"/>
+    <attr name="list_item_image" format="reference"/>
+
+    <attr name="card_background" format="color"/>
+
+    <attr name="string_theme_name" format="string"/>
+    <attr name="string_products_kind" format="string"/>
+</resources>
